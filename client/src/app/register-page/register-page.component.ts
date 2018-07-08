@@ -1,3 +1,4 @@
+import { MaterialService } from './../shared/classes/material.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthService } from '../shared/services/auth.service';
@@ -37,7 +38,7 @@ export class RegisterPageComponent implements OnInit, OnDestroy {
         });
       },
       (err) => {
-        console.warn('err');
+        MaterialService.toast(err.error.message);
         this.form.enable();
       }
     );
