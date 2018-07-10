@@ -57,3 +57,14 @@ export interface OverviewPageItem {
   yesterday: number;
   isHigher: boolean;
 }
+
+export interface AnalyticsPage {
+  average: number;
+  chart: AnalyticsChart[];
+}
+
+export interface AnalyticsChart {
+  gain: number;
+  order: number;
+  label: string;
+}
