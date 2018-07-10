@@ -48,6 +48,7 @@ export class AnalyticsPageComponent implements AfterViewInit, OnDestroy {
       gainCtx.canvas.height = '300px';
       orderCtx.canvas.height = '300px';
 
+      // test info for chart
       // orderConfig.labels.push('05.07.2018');
       // orderConfig.labels.push('08.07.2018');
       // orderConfig.labels.push('09.07.2018');
